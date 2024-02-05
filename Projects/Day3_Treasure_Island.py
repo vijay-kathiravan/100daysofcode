@@ -17,16 +17,18 @@ MM88MMM 8b,dPPYba,  ,adPPYba, ,adPPYYba, ,adPPYba, 88       88 8b,dPPYba,  ,adPP
  88 `"YbbdP"' 88 `"8bbdP"Y8 88       88  `"8bbdP"Y8""")
 
 print("Welcome to Treasure Island! Your Mission is to find the treasure!")
-Direction = input("Do you want to go left or right?\t")
+Direction = input("You are at a crossroad! Do you want to go left or right?\t")
 if Direction.lower() == 'left':
-    action = input("Do you want to swim or wait?\t")
+    action = input("You have come to a Lake, there is an island in the middle of the lake! "
+                   "Type wait to wait for a boat or swim to swim across the lake?\t")
     if action.lower() == 'wait':
-        door = input("Which door do you want to open? Red, Blue, Yellow?\t")
+        door = input("You arrived at the island unharmed!"
+                     "There is a house with three doors! Which door do you want to open? Red, Blue, Yellow?\t")
         if door.lower() == 'yellow':
-            print('You Win!')
+            print('You found the treasure!  4You Win!')
         else:
-            print("Game Over!")
+            print("It's a room full of fire! Game Over!")
     else:
-        print("Game Over!")
+        print("An Angry trout attacked you! Game Over!")
 else:
-    print("Game Over")
+    print("You fell into a hole! Game Over!")
