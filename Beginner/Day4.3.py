@@ -6,7 +6,7 @@ position = input("Give a position to hide the Treasure\t")
 row,column = position[1],position[0]
 alphlist = ['A','B','C']
 column = alphlist.index(column)
-map[int(row)][column] = 'X'
+map[int(row)-1][column] = 'X'
 print("Now the treasure is hidden!")
 x = input("Do you want to see the treasure?\t")
 if x.casefold() == 'yes' or x.casefold()=='y':
